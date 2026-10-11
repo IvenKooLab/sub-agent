@@ -1,8 +1,8 @@
-# AGENTS.md — vibe-coding 全流程编排
+# AGENTS.md — AI 编码全流程编排
 
 > 把 AI 编码从"随手干"变成**按流程编排**。这份 rules 是项目根级始终生效的指令(放进项目根目录,或 `CLAUDE.md` / `AGENTS.md` / `.cursorrules` / Qoder rule 任一位置),AI 全程遵守。
 >
-> **它不是新方法论**,是把 [vibe-coding](https://gitee.com/IvenKooLab/vibe-coding)(方法论 skill 合集)+ `skill` 库(内部)(具体技能)两仓库的包,**串成一个完整的开发流程**。理念同源于 superspecflow,但跨 IDE 通用、subagent 可控、轻量任务可跳过。
+> **它不是新方法论**,是把 [vibe-coding](https://gitee.com/IvenKooLab/vibe-coding)(方法论 skill 合集)+ 框架 skill 库(自备,具体技能)的包,**串成一个完整的开发流程**。理念同源于 superspecflow,但跨 IDE 通用、subagent 可控、轻量任务可跳过。
 
 ---
 

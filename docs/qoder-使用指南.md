@@ -28,7 +28,7 @@
 
 ### 第 1 步:放 AGENTS.md(项目级编排)
 
-把 [rules 仓库](你的内部 git 仓库) 里 `sub-agent/AGENTS.md` **复制到你的项目根目录**,保持文件名 `AGENTS.md`。
+把 本仓库的 `AGENTS.md` **复制到你的项目根目录**,保持文件名 `AGENTS.md`。
 
 Qoder 会**自动识别**项目根的 AGENTS.md,AI 启动就读。不需要额外配置。
 
@@ -85,7 +85,7 @@ cp -r ~/vibe-coding/Trellis/skills/* ~/.qoder/skills/
 
 如果项目要用 nacos2-mcp(让 AI 读 nacos 配置):
 
-在 Qoder 的**个人设置 → MCP** 里配置 nacos2-mcp 服务(具体配置见 [mcp 仓库](你的内部 git 仓库) 的 README)。
+在 Qoder 的**个人设置 → MCP** 里配置 nacos2-mcp 服务(具体配置见 [nacos2-mcp 仓库](https://gitee.com/IvenKooLab/nacos2-mcp) 的 README)。
 
 > MCP 是工具扩展,AI 按需调用,不需要像 skill 那样"触发"。
 
@@ -205,4 +205,4 @@ AI: (启动自检 §12,报告 skill/MCP 就位情况)
 - [Qoder Skills 官方文档](https://docs.qoder.com/extensions/skills.md)
 - [Qoder MCP 配置(阿里云)](https://help.aliyun.com/zh/lingma/qoder-cn/user-guide/guide-for-using-mcp)
 - [Qoder 设置](https://docs.qoder.com/zh/plugins/settings)
-- 我们的三仓库:[vibe-coding](https://gitee.com/IvenKooLab/vibe-coding) / `skill` 库(内部) / [mcp](https://gitee.com/IvenKooLab/mcp) / [rules](你的内部 git 仓库)
+- 我们的三仓库:[vibe-coding](https://gitee.com/IvenKooLab/vibe-coding) / [vibe-coding-skills](https://github.com/IvenKooLab/vibe-coding-skills) / [mcp](https://gitee.com/IvenKooLab/mcp) / 本仓库
