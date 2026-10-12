@@ -1,4 +1,64 @@
-# sub-agent · AI 编码全流程编排
+# sub-agent — AI Coding Orchestration Discipline
+
+**English** · [简体中文](#简体中文--ai-编码全流程编排)
+
+> Skill packs (grill-me, ponytail, openspec, trellis, superpowers…) are the parts.
+> This repo is the **assembly manual** — one `AGENTS.md` that chains them into a
+> controlled 7-phase flow, dispatching subagents only when it actually pays off.
+
+## The problem
+
+"Expert team / multi-agent" AI coding modes burn tokens for one reason: **blind
+dispatching**. Every step spawns a subagent, the main agent degrades into a pure
+scheduler, and you pay coordination overhead for work it could have done itself.
+
+## The fix: three dispatch criteria
+
+A subagent is dispatched only when **all three** hold:
+
+1. **Heavy** — reads many files / a large implementation
+2. **Independently verifiable** — has a concrete, checkable deliverable
+3. **Context-heavy** — doing it in the main agent would crowd out its context
+
+Otherwise the main agent does the work itself. Not every task deserves a
+committee — fixing a typo through a full pipeline is killing a chicken with an
+orchestra.
+
+## The 7-phase flow
+
+| Phase | What | Lead skill | Subagent? |
+|---|---|---|---|
+| ① Clarify | Interrogate the requirement | grill-me | No |
+| ② Route | Pick the path / packs | vibe | No |
+| ③ Contract | Spec for complex work (skip for light) | openspec | Optional scout |
+| ④ Decompose | Split into units + dispatch plan | context-engineering | — |
+| ⑤ Implement | Code | superpowers + ponytail | By criteria |
+| ⑥ Review | Two-lens review | code-review + ponytail-review | Optional |
+| ⑦ Verify & archive | Tests + write-back | verification + openspec | No |
+
+## Quick start
+
+1. Copy [`AGENTS.md`](AGENTS.md) into your project root (or append it to
+   `CLAUDE.md` / your Qoder rule / `.cursorrules`)
+2. Make sure the vibe-coding skill packs are installed
+3. Tell your agent: "Follow AGENTS.md for this requirement: [requirement]"
+
+## Ecosystem
+
+| Repo | Role | Content |
+|---|---|---|
+| [vibe-coding-skills](https://github.com/IvenKooLab/vibe-coding-skills) | Methodology skills | grill-me / ponytail / openspec / trellis / superpowers + vibe entry |
+| [nacos2-mcp](https://github.com/IvenKooLab/nacos2-mcp) | Tooling | Nacos 2.x read-only MCP server |
+| Framework skills (BYO) | Framework knowledge | Your middleware specs (see AGENTS.md §7 template) |
+| **This repo** | **Orchestration** | **AGENTS.md: full flow + dispatch discipline + framework constraint templates** |
+
+## License
+
+MIT
+
+---
+
+# 简体中文 · sub-agent · AI 编码全流程编排
 
 > vibe-coding / nacos2-mcp 等 skill 包是"零件"，本仓库是**装配图**——一份 `AGENTS.md` 把它们串成可控的 7 阶段开发流程，该派 subagent 时才派。
 
